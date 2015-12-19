@@ -6,7 +6,7 @@ Fork别人的代码，以下英文是原版的README。
 因此笔者修改了初始化的代码，试着编译了用于MPU6050的测试代码，通过了，也确实可以争取拿到roll、pitch、yaw的数据。
 不过如果选择编译用于MPU9250的版本，却不能完成MPU的初始化，如法正确工作。这个后面有空再修改，我也在原作者的github上提了issue。
 还好的是，可以把MPU9250当MPU6050用（笔者也正是用MPU9250测试的）。
-![](./snapshot.png)
+![](https://github.com/uname/MotionSensorExample/blob/master/snapshot.png)
 
 MPU6050/MPU6500/MPU9150/MPU9250 over I2c for RaspberryPi using official Invensense libraries (v5.1):
 http://www.invensense.com/developers/index.php?_r=downloads
