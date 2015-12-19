@@ -445,15 +445,22 @@ struct dmp_s
 	uint8_t packet_length;
 };
 
-static struct dmp_s dmp =
+static struct dmp_s dmp;
+
+static void init_dump_struct()
 {
-	.tap_cb = NULL,
-	.android_orient_cb = NULL,
-	.orient = 0,
-	.feature_mask = 0,
-	.fifo_rate = 0,
-	.packet_length = 0
-};
+    dmp.tap_cb = NULL;
+    dmp.android_orient_cb = NULL;
+    dmp.orient = 0;
+    dmp.feature_mask = 0;
+    dmp.fifo_rate = 0;
+    dmp.packet_length = 0;
+}
+
+void dump_init(void)
+{
+    init_dump_struct();
+}
 
 /**
  *  @brief  Load the DMP with this image.

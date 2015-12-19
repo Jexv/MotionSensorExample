@@ -57,6 +57,7 @@ int ms_open() {
 		return -1;
 	}
 	printf("Setting MPU sensors...\n");
+    dump_init();
 	if (mpu_set_sensors(INV_XYZ_GYRO|INV_XYZ_ACCEL)!=0) {
 		printf("Failed to set sensors!\n");
 		return -1;
